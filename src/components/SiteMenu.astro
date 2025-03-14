@@ -1,0 +1,39 @@
+---
+import SiteNavigation from "./SiteNavigation.astro"
+---
+
+<nav>
+<a href="index.astro"> <img class="logo"  src="../public/imgs/logo.png" alt="logo"> </a>
+  <ul>
+    <li class="nav_knap"><SiteNavigation text="BLIV FRIVILLIG NU!"/></li>
+  </ul>
+
+</nav>
+
+<style>
+    ul {
+    list-style: none;
+
+}
+.logo {
+  width: 50%;
+  margin-left: 2rem;
+}
+nav {
+  position: fixed; /* fast */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* højre/venstre*/
+  align-items: center;
+  padding-block: 1rem;
+  background-color: #e2eaed;
+  box-shadow: 0 1px 1px #324A3E;
+  z-index: 10; /* øverst*/
+  transition: transform 0.3s ease-in-out; /* ani skjul-effekten */
+}
+.nav_knap {
+    padding-right: 3rem;
+}
+</style>
