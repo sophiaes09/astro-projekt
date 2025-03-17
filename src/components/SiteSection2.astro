@@ -1,0 +1,62 @@
+---
+const { overskrift, img, } = Astro.props;
+---
+
+<div class="card_container">
+<article class="card">
+  <div class="card_indhold">
+    <h3>{overskrift}</h3>
+   <p>Vil du hjælpe pårørende til misbrugsramte og skabe meningsfuld forandring? Bliv frivillig rådgiver hos Pårørende Netværket – Misbrugsportalen!
+    Vi søger engagerede frivillige til at støtte mennesker berørt af alkohol-, stof- eller medicinmisbrug. Du bliver en del af et stærkt, fagligt fællesskab med rådgivere fra social- og sundhedsområdet, terapeuter og tidligere pårørende. Uanset hvor i landet du bor, kan du bidrage – vores arbejde er landsdækkende og foregår online i et nærværende og støttende miljø.</p>
+  </div>
+  <img class="card_image" src=`${img}` alt=`Image og ${overskrift}` />
+</article>
+</div>
+
+<style>
+.card_indhold {
+  flex: 1;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.card_indhold p {
+  font-size: 15px;
+  margin: 0;
+  color: #333; 
+  line-height: 1.5rem;
+}
+
+h3 {
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 2rem;
+  color: #324A3E;
+}
+
+.card {
+ display: flex;
+  align-items: center;
+  background-color: #F3F7F8; 
+  border-radius: 15px;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.card_image {
+  width: 410px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-right: 15px;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    padding-top: 8rem;
+}
+</style>
