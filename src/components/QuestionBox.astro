@@ -1,0 +1,91 @@
+---
+const { spørgsmål, svar } = Astro.props;
+---
+
+<div class="faq">
+<button class="accordion">
+<h2>{spørgsmål}</h2>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="pannel">
+    <p>{svar}</p>
+</div>
+</div>
+
+<style>
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 0.8rem;
+}
+
+.active, .accordion:hover {
+  background-color: #F3F7F8;
+}
+
+.active .accordion I {transform:rotate(180deg); transition:transform 0.5s 0.1s;}
+.pannel {
+  padding: 0 1rem 1rem 2rem;
+  background-color: #F3F7F8;
+  overflow: hidden;
+  background-color: #F3F7F8;
+  display: none;
+}
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+.faq.active {
+  border: none;
+}
+
+.fa-solid{
+font-family: "Font Awesome 6 Free";
+font-size: 2rem;
+}
+</style>
+
+<script>
+    var acc = document.getElementsByClassName
+    ("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function
+            () {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var pannel = this.nextElementSibling;
+
+                if(pannel.style.display === "block"){
+                    pannel.style.display = "none";
+                } else {
+                    pannel.style.display = "block";
+                }
+            }
+        );
+    }
+        
+    
+</script>

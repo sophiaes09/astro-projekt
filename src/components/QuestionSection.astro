@@ -1,0 +1,25 @@
+---
+import QuestionBox from "./QuestionBox.astro";
+const { title } = Astro.props;
+---
+
+<section>
+  <h2>{title}</h2>
+  <QuestionBox spørgsmål="Hvordan ansøger jeg?" svar="Du kan ansøge om at blive frivillig via formularen nedenfor, så snart vi har læst din ansøgning, vil du høre fra os. Herefter kommer du til en samtale, og får den passende rådgivning."/>
+  <QuestionBox spørgsmål="Hvad skal jeg have af kvalifikationer?" svar="Du skal ikke have nogen kvalifikationer for at blive frivillig - du skal blot have lyst til at lytte og hjælpe andre mennesker, som har brug for det. "/>
+  <QuestionBox spørgsmål="Hvor mange timer skal jeg bruge på at være frivillig?"/>
+  <QuestionBox spørgsmål="Jeg er nervøs for at sige noget forkert, får jeg oplæring?"/>
+</section>
+
+<style>
+    section{
+        background-color: #E0EAED;
+        padding-block: 4rem;
+        padding-inline: 12rem;
+    }
+
+    h2{
+        color: #324A3E;
+        padding-bottom: 2rem;
+    }
+</style>
