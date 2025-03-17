@@ -1,3 +1,4 @@
+/******* generelt ******/
 html {
   box-sizing: border-box;
 }
@@ -6,10 +7,43 @@ img {
   width: 100%;
 }
 
+/******** cards ******/
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card img {
   width: 100%;
+}
+
+/******** fonts *******/
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+/***** header *****/
+.p_header {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35%;
+}
+
+.p_header_padding {
+  padding-bottom: 2.8rem;
 }

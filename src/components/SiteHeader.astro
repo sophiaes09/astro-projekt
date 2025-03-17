@@ -1,13 +1,24 @@
 ---
+const { title } = Astro.props;
 import SiteNavigation from "./SiteNavigation.astro"
 ---
 
 <header>
+    <h1>{title}</h1>
+    <slot />
     <SiteNavigation text="ANSØG NU" variant="tyk"/>
 </header>
 
 <style>
     header{
         background-color: #e2eaed;
+        padding: 2rem;
+        padding-bottom: 10rem;
+        margin-top: 0.1rem;
+    }
+
+    h1{
+        font-size: 50px;
+        color: #324A3E;
     }
 </style>
