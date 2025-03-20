@@ -1,54 +1,54 @@
 ---
-const { text, name, img, } = Astro.props;
+const { text, name, img } = Astro.props;
 ---
 
 <div class="card_container">
-<article class="card">
-  <div class="card_indhold">
-   <p>{text}</p>
-    <h3>{name}</h3>
-  </div>
-  <img class="card_image" src=`${img}` alt=`Image og ${name}` />
-</article>
+  <article class="card">
+    <div class="card_indhold">
+      <p>{text}</p>
+      <h3>{name}</h3>
+    </div>
+    <img class="card_image" src=`${img}` alt=`Image og ${name}` />
+  </article>
 </div>
 
 <style>
-.card_indhold {
-  flex: 1;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
+  .card_indhold {
+    flex: 1;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
 
-.card_indhold p {
-  font-size: 13px;
-  margin: 0;
-  color: #333; /* Mørk tekstfarve */
-}
+  .card_indhold p {
+    font-size: 13px;
+    margin: 0;
+    color: #333; /* Mørk tekstfarve */
+  }
 
-h3 {
-  display: block;
-  margin-top: 10px;
-  font-size: 15px;
-}
+  h3 {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+  }
 
-.card {
- display: flex;
-  align-items: center;
-  background-color: #e0eae5; /* Lys grøn/blå farve */
-  border-radius: 15px;
-  width: 290px;
-  height: 140px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-.card_image {
-  width: 110px;
-  object-fit: cover;
-  border-radius: 10%;
-  margin-right: 15px;
-}
+  .card {
+    display: flex;
+    align-items: center;
+    background-color: #e0eae5; /* Lys grøn/blå farve */
+    border-radius: 15px;
+    width: 310px;
+    height: 180px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .card_image {
+    width: 110px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-right: 15px;
+  }
 
-.card_container{
-   padding: 2%;
-}
+  .card_container {
+    padding: 2%;
+  }
 </style>
