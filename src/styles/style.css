@@ -53,49 +53,34 @@ header {
   padding-bottom: 2.8rem;
 }
 
-#dreng1_container {
+#mennesker_container {
   position: absolute;
   left: 50%;
-  bottom: -8%;
-  aspect-ratio: 256/384;
-  width: 15%;
+  bottom: -6.4%;
+  aspect-ratio: 725/370;
+  width: 50%;
 }
 
-#dreng1_sprite {
+#mennesker_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(imgs/dreng1.svg);
+  background-image: url(imgs/mennesker.svg);
   background-size: cover;
 }
-
-#dreng2_container {
-  position: absolute;
-  left: 65%;
-  bottom: -6.2%;
-  aspect-ratio: 256/384;
-  width: 15%;
-}
-
-#dreng2_sprite {
-  width: 100%;
-  height: 100%;
-  background-image: url(imgs/dreng2.svg);
-  background-size: cover;
-}
-
-#pige_container {
-  position: absolute;
-  left: 80%;
-  bottom: -5%;
-  aspect-ratio: 256/384;
-  width: 15%;
-}
-
-#pige_sprite {
-  width: 100%;
-  height: 100%;
-  background-image: url(imgs/pige.svg);
-  background-size: cover;
+@media screen and (max-width: 650px) {
+  .p_header {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  #mennesker_container {
+    position: absolute;
+    left: 17%;
+    bottom: -2%;
+    aspect-ratio: 725/370;
+    width: 70%;
+  }
 }
 
 /******** text section *****/
@@ -113,4 +98,13 @@ header {
 
 .h2_textsection {
   color: #324a3e;
+}
+
+@media screen and (max-width: 650px) {
+  .flex_centeret {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+  }
 }

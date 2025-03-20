@@ -1,9 +1,10 @@
 ---
-const { title } = Astro.props;
+const { title1, title2 } = Astro.props;
 ---
 
 <section>
-  <h2>{title}</h2>
+  <h2 class="h2_øverst">{title1}</h2>
+  <h2>{title2}</h2>
   <slot />
 </section>
 
@@ -11,7 +12,11 @@ const { title } = Astro.props;
     h2{
         font-size: 2rem;
         text-align: center;
-        padding-block: 5rem;
         color: #324A3E;
+    }
+
+    .h2_øverst{
+      padding-top: 6rem;
+      margin-bottom: -15px;
     }
 </style>
