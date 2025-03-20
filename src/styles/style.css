@@ -9,8 +9,9 @@ img {
 
 /******** cards ******/
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card img {
   width: 100%;
