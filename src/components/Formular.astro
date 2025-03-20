@@ -1,0 +1,153 @@
+---
+
+---
+
+<section class="section-contact">
+  <div class="container">
+    <form>
+      <div class="grid_tokulonner">
+        <div class="form-group">
+          <label for="firstname">Fornavn:</label>
+          <input type="text" name="firstname" id="firstname" required class="form-element" />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Efternavn:</label>
+          <input type="text" name="lastname" id="lastname" required class="form-element" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Fødselsdato - XXXX-XX</label>
+        <input type="email" name="email" id="email" required class="form-element" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required class="form-element" />
+      </div>
+      <div class="form-group">
+        <label for="number">Telefonnummer:</label>
+        <input type="text" name="company" id="company" class="form-element" />
+      </div>
+      <div class="form-group">
+        <label for="beskræftigelse">Nuværende beskræftigelse:</label>
+        <input type="text" name="company" id="company" class="form-element" />
+      </div>
+      <div class="form-group">
+        <label for="uddannelse">Uddannelse:</label>
+        <input type="text" name="company" id="company" class="form-element" />
+      </div>
+      <div class="form-group full">
+        <label for="message">Besked:</label>
+        <textarea name="message" id="message" class="form-element"></textarea>
+      </div>
+      <div class="submit-group">
+        <input type="submit" value="ANSØG" />
+      </div>
+    </form>
+  </div>
+</section>
+
+<style>
+  .section-contact {
+    min-height: 100vh;
+    background-color: #e3eae4;
+    padding-block: 5rem;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: 17rem;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 32px;
+    gap: 16px;
+    background-color: #324a3e;
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  .grid_tokulonner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-group {
+    &.full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .form-element {
+    appearance: none;
+    outline: none;
+    border: none;
+
+    display: block;
+    width: 100%;
+
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #f3f3f3;
+    transition: 0.4s;
+
+    &:focus {
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+  }
+
+  textarea {
+    resize: none;
+    min-height: 100px;
+  }
+
+  .submit-group {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-block: 1.2rem;
+
+    input[type="submit"] {
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+
+      padding: 15px 20px;
+      background-color: #e0eaed;
+      border-radius: 20px;
+      color: #324a3e;
+      cursor: pointer;
+      transition: 0.4s;
+
+      &:hover {
+        background-color: #fff;
+        border: #324a3e;
+      }
+    }
+  }
+</style>
