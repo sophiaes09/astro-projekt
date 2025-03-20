@@ -48,3 +48,20 @@ p {
 .p_header_padding {
   padding-bottom: 2.8rem;
 }
+
+/******** text section *****/
+.text_section {
+  max-width: 75ch;
+  line-height: 140%;
+}
+
+.flex_centeret {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 5rem;
+}
+
+.h2_textsection {
+  color: #324a3e;
+}
