@@ -1,6 +1,6 @@
 ---
 import "../styles/style.css";
-import SiteMenu from "../components/SiteMenu.astro"
+import SiteMenu from "../components/SiteMenu.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteSection from "../components/SiteSection.astro";
 import Card from "../components/Card.astro";
@@ -17,54 +17,50 @@ import Formular from "../components/Formular.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astro Project - Pørerende Netværket</title>
     <link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
-
   <body>
-     <SiteMenu />
+    <SiteMenu />
 
-     <SiteHeader title="Bliv frivillig – Gør en forskel med din stemme!">
-		<div class="p_header_padding">
-		<p class="p_header">Hjælp misbrugere og deres pårørende.</p>
-		<p class="p_header">Din støtte kan gøre en forskel for dem, der kæmper.	</p>
-		</div>
-		   <div id="dreng1_container">
-                        <div id="dreng1_sprite"></div>
-                    </div>
-					   <div id="dreng2_container">
-                        <div id="dreng2_sprite"></div>
-                    </div>
-					   <div id="pige_container">
-                        <div id="pige_sprite"></div>
-                    </div>
-					
-	 </SiteHeader>
+    <SiteHeader title1="Bliv frivillig – Gør en forskel" title2=" med din stemme!">
+      <div class="p_header_padding">
+        <p class="p_header">Hjælp misbrugere og deres pårørende.</p>
+        <p class="p_header">Din støtte kan gøre en forskel for dem, der kæmper.</p>
+      </div>
+      <div id="dreng1_container">
+        <div id="dreng1_sprite"></div>
+      </div>
+      <div id="dreng2_container">
+        <div id="dreng2_sprite"></div>
+      </div>
+      <div id="pige_container">
+        <div id="pige_sprite"></div>
+      </div>
+    </SiteHeader>
 
-	 <SiteSection title="Din erfaring og forståelse gør stor forskel i andres liv">
-		<div class="cards">
-        <Card text="“Jeg var nervøs i starten, men med oplæring og støtte følte jeg mig hurtigt klar – og nu kan jeg ikke forestille mig ikke at hjælpe.”" name="Mia" img="../imgs/Mia.png"/>
-      	<Card text="“Det bedste ved at være frivillig er at mærke, hvordan en simpel samtale kan give håb og lettelse.”" name="Birgitte" img="../imgs/Birgitte.png"/>
-		<Card text="“Jeg troede, det krævede meget at hjælpe – men bare dét at lytte kan gøre en kæmpe forskel.”" name="Rasmus" img="../imgs/Rasmus.png"/>
-		</div>
-	 </SiteSection>
+    <SiteSection title="Din erfaring og forståelse gør stor forskel i andres liv">
+      <div class="cards">
+        <Card text="“Jeg var nervøs i starten, men med oplæring og støtte følte jeg mig hurtigt klar – og nu kan jeg ikke forestille mig ikke at hjælpe.”" name="Mia" img="../imgs/Mia.png" />
+        <Card text="“Det bedste ved at være frivillig er at mærke, hvordan en simpel samtale kan give håb og lettelse.”" name="Birgitte" img="../imgs/Birgitte.png" />
+        <Card text="“Jeg troede, det krævede meget at hjælpe – men bare dét at lytte kan gøre en kæmpe forskel.”" name="Rasmus" img="../imgs/Rasmus.png" />
+      </div>
+    </SiteSection>
 
-	 <SiteSection2 overskrift="Hvad indebærer det at være frivillig i Pårørende Netværket?" img="../imgs/Kvinde.png"/>
+    <SiteSection2 overskrift="Hvad indebærer det at være frivillig i Pårørende Netværket?" img="../imgs/Kvinde.png" />
 
-	 <QuestionSection title="Ofte stillede spørgsmål - find svaret her:" />
+    <QuestionSection title="Ofte stillede spørgsmål - find svaret her:" />
 
-	 <TextSection>
-		<div class="flex_centeret">
-		<div class="text_section">
-		<h2 class="h2_textsection"><b>Bliv en del af fællesskabet – meld dig som frivillig!</b></h2>
-		<p>Dine ord og din tid kan gøre en stor forskel for pårørende til misbrugere. Udfyld formularen, så kontakter vi dig med mere information. Du får oplæring og støtte hele vejen – du skal blot have lysten til at lytte og hjælpe.</p>
-		<p><i>Ansøg nedenfor – vi glæder os til at høre fra dig!</i></p>
-		</div>
-		</div>
-	 </TextSection>
+    <TextSection>
+      <div class="flex_centeret">
+        <div class="text_section">
+          <h2 class="h2_textsection"><b>Bliv en del af fællesskabet – meld dig som frivillig!</b></h2>
+          <p>Dine ord og din tid kan gøre en stor forskel for pårørende til misbrugere. Udfyld formularen, så kontakter vi dig med mere information. Du får oplæring og støtte hele vejen – du skal blot have lysten til at lytte og hjælpe.</p>
+          <p><i>Ansøg nedenfor – vi glæder os til at høre fra dig!</i></p>
+        </div>
+      </div>
+    </TextSection>
 
-	 <Formular />
+    <Formular />
   </body>
-
-
 </html>
